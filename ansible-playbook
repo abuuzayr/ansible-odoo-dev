@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ansible-playbook \
+  --become \
+  --user ubuntu \
+  --inventory '127.0.0.1,' \
+  --extra-vars 'ansible_port=2222' \
+  --ssh-common-args '-o StrictHostKeyChecking=no' \
+  "$@"

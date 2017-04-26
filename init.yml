@@ -1,0 +1,15 @@
+---
+- hosts: all
+  roles:
+    - hostname
+    - timezone
+    - systemd
+    - docker
+    - docker-auth
+
+    - role: docker-aws
+      docker_aws_config_volume: aws-odoo-config
+      docker_aws_region: ap-southeast-1
+      docker_aws_access_key_id: 'KEY'
+      docker_aws_secret_access_key: 'ID'
+
