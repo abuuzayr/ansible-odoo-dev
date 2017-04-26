@@ -1,0 +1,11 @@
+[submodule "vagrant-ubuntu-xenial64"]
+	path = vagrant-ubuntu-xenial64
+	url = git@git.groventure.com:smecen/vagrant-ubuntu-xenial64.git
+[submodule "roles"]
+	path = roles
+	url = git@git.groventure.com:smecen/ansible-roles
+	branch = dev
+[submodule "tasks"]
+	path = tasks
+	url = git@git.groventure.com:smecen/ansible-tasks
+	branch = dev
